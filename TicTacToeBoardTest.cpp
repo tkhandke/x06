@@ -18,3 +18,66 @@ TEST(TicTacToeBoardTest, sanityCheck)
 {
 	ASSERT_TRUE(true);
 }
+TEST(TicTacToeBoardTest, PlacePieceCheck0)
+
+{
+
+	TicTacToeBoard ttt;
+	ASSERT_TRUE(ttt.placePiece(1,1));
+
+}
+
+
+
+TEST(TicTacToeBoardTest, getPieceCheck0)
+
+{
+
+	TicTacToeBoard ttt;
+	ASSERT_TRUE(ttt.getPiece(1,1));
+
+}
+
+/////////
+
+TEST(TicTacToeBoardTest, PlacePieceCheck1)
+
+{
+
+	TicTacToeBoard ttt;
+	ASSERT_TRUE(ttt.placePiece(0,1));
+
+}
+
+
+
+TEST(TicTacToeBoardTest, getPieceCheck1)
+
+{
+
+	TicTacToeBoard ttt;
+	ASSERT_TRUE(ttt.getPiece(0,1));
+
+}
+
+//////
+
+TEST(TicTacToeBoardTest, PlacePieceCheck2)
+
+{
+
+	TicTacToeBoard ttt;	
+	ASSERT_FALSE(ttt.placePiece(5,1));
+
+}
+
+
+
+TEST(TicTacToeBoardTest, getPieceCheck2)
+
+{
+
+	TicTacToeBoard ttt;	
+	ASSERT_FALSE(ttt.getPiece(5,1));
+
+}
